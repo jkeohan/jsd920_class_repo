@@ -1,4 +1,8 @@
-Finish the prework!
-Complete https://try.github.io/
-Units 1 and 2 from CodeAcademy's Learn the Command Line (ignore paid-content)
-Extra Credit: The Command Line Crash Course
+Assignment Due on Thursday, 9/22:
+-Complete https://try.github.io/ (15-30min)
+
+Assignment Due on Tuesday, 9/27:
+-Read Chapter 1,2 of Eloquent JS
+
+
+
