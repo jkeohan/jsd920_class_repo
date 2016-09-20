@@ -5,7 +5,7 @@
 * Read Intro of [Eloquent JS0] (http://eloquentjavascript.net/)
 
 ### Assignment Due on Tuesday, 9/27:
-* Read Chapter 1,2 of Eloquent JS
+* Read Chapter 1,2 of [Eloquent JS0] (http://eloquentjavascript.net/)
 * Complete all of three of the lessons in [CodeAcademy's JavaScript Fundamentals](https://www.codecademy.com/en/tracks/javascript-upgraded) track.
 
 
