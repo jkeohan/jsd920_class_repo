@@ -1,6 +1,6 @@
 # Welcome to the JSD920 Class Repo
 
-### Here are some resources that you may find useful:
+### Additional Resources:
 
 #### Suggested Reading
  * [Eloquent JS] (http://eloquentjavascript.net/)
