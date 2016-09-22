@@ -1,3 +1,0 @@
-In class assignments:
-
--
