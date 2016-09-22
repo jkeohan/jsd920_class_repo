@@ -5,8 +5,12 @@
 * Read Intro of [Eloquent JS] (http://eloquentjavascript.net/)
 
 ### Assignment Due on Tuesday, 9/27:
-* Read Chapter 1,2 of [Eloquent JS] (http://eloquentjavascript.net/)
+## Mandatory
 * Complete all of three of the lessons in [CodeAcademy's JavaScript Fundamentals](https://www.codecademy.com/en/tracks/javascript-upgraded) track.
+* Having a solid understanding of HTML\CSS is important so if you need to brush up then complete projects 1-3 of [GA's Dash](https://dash.generalassemb.ly/projects) track.
+## Optional
+* Read Chapter 1,2 of [Eloquent JS] (http://eloquentjavascript.net/)
+
 
 
 
