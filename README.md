@@ -6,10 +6,10 @@
 
 * [Eloquent JS](http://eloquentjavascript.net/)
 
-### API's
+#### API's
 
 * [Largest API directory on the web](http://www.programmableweb.com/apis/directory)
 
-### Angular Resources
+#### Angular Resources
 
 * [Angular in 90ish minutes](http://www.hongkiat.com/blog/angularjs-tutorials-screencast/)
