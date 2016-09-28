@@ -5,6 +5,7 @@
 #### Suggested Reading
 
 * [Eloquent JS](http://eloquentjavascript.net/)
+* [Understanding JS Arrays](https://javascriptweblog.wordpress.com/2010/07/12/understanding-javascript-arrays/)
 
 #### API's
 
@@ -13,3 +14,4 @@
 #### Angular Resources
 
 * [Angular in 90ish minutes](http://www.hongkiat.com/blog/angularjs-tutorials-screencast/)
+

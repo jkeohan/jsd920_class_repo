@@ -10,9 +10,8 @@
 * Having a solid understanding of HTML\CSS is important so if you need to brush up then complete projects 1-3 of [GA's Dash](https://dash.generalassemb.ly/projects) track.
 
 #### Optional
-* Read Chapter 1,2 of [Eloquent JS] (http://eloquentjavascript.net/)
-
-
+* [Javascript Primitive Data Types](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+* [Diff Between JS Primitive Data Types and Objects](http://vicfriedman.github.io/blog/2013/09/15/the-difference-between-javascript-primitive-data-types-and-objects/)
 
 
 
