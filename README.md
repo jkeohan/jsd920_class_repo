@@ -7,6 +7,11 @@
 * [Eloquent JS](http://eloquentjavascript.net/)
 * [Understanding JS Arrays](https://javascriptweblog.wordpress.com/2010/07/12/understanding-javascript-arrays/)
 
+#### Cheat Sheets
+
+* [JS](https://www.cheatography.com/davechild/cheat-sheets/javascript/)
+* [JS](http://overapi.com/javascript)
+
 #### API's
 
 * [Largest API directory on the web](http://www.programmableweb.com/apis/directory)

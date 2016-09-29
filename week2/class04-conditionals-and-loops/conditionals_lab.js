@@ -23,3 +23,6 @@ var age = 28;
 whatCanYouDo(age)
 
 // Remember to use node to run this script > node conditionals_lab.js
+
+// CHALLENGE
+// Sign into HackerRank and try to resolve 30 Days of Code: Day 2 Challenge  
