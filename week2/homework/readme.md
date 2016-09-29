@@ -9,7 +9,7 @@
 #### Optional
 * Continue reading chapter(s) 1,2 of [Eloquent JS] (http://eloquentjavascript.net/)
 
-### Assignment Due on Tuesday, 9/27:
+### Assignment Due on Tuesday, 10/4:
 
 #### Mandatory
 
