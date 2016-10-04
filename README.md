@@ -9,8 +9,8 @@
 
 #### Cheat Sheets
 
-* [JS](https://www.cheatography.com/davechild/cheat-sheets/javascript/)
-* [JS](http://overapi.com/javascript)
+* [Cheatography](https://www.cheatography.com/davechild/cheat-sheets/javascript/)
+* [Overapi](http://overapi.com/javascript)
 
 #### API's
 

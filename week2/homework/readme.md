@@ -15,9 +15,10 @@
 #### Mandatory
 
 * finish 99_bottles_of_beer.js
+* Read Useful JS Troubleshooting Tips
+* Read Chrome Developer Tools - sources section
 
 #### Optional
 * Read Chapter 3: Functions of [Eloquent JS] (http://eloquentjavascript.net/)
 * Read Chapter 8: Bugs and Error Handling of [Eloquent JS] (http://eloquentjavascript.net/)
-* Read [Useful JS Troubleshooting Tips](https://raygun.com/blog/2015/06/useful-javascript-debugging-tips-you-didnt-know/)
-* Read [Chrome Developer Tools - sources section](https://developers.google.com/web/tools/chrome-devtools/?hl=en)
+
