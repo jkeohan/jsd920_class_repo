@@ -3,7 +3,7 @@
 ### Assignment Due on Thursday, 9/29:
 
 #### Mandatory
-* [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
+* Review [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
 
 #### Optional
 * Continue reading [The for loop vs forEach](http://thejsguy.com/2016/07/30/javascript-for-loop-vs-array-foreach.html)
