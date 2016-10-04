@@ -2,9 +2,8 @@
 
 ### Assignment Due on Thursday, 10/6:
 
-#### Read the following articles:
-
-* [How many lines should a function have?](http://stackoverflow.com/questions/611304/how-many-lines-of-code-should-a-function-procedure-method-have)
+#### Mandatory
+* Read [How many lines should a function have?](http://stackoverflow.com/questions/611304/how-many-lines-of-code-should-a-function-procedure-method-have)
 
 #### Optional
 * Continue reading [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
