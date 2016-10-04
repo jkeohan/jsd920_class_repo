@@ -2,7 +2,6 @@
 
 ### Assignment Due on Thursday, 9/29:
 
-#### Mandatory
 * Review [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
 
 #### Optional
@@ -10,8 +9,6 @@
 * Continue reading [for vs while Performance](http://www.stoimen.com/blog/2012/01/24/javascript-performance-for-vs-while/)
 
 ### Assignment Due on Tuesday, 10/4:
-
-
 
 * finish 99_bottles_of_beer.js
 * Read [Useful JS Troubleshooting Tips](https://raygun.com/blog/2015/06/useful-javascript-debugging-tips-you-didnt-know/)
