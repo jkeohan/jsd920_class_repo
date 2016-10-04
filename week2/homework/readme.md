@@ -2,8 +2,7 @@
 
 ### Assignment Due on Thursday, 9/29:
 
-#### Read the following articles:
-
+#### Mandatory
 * [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
 
 #### Optional
@@ -12,7 +11,7 @@
 
 ### Assignment Due on Tuesday, 10/4:
 
-#### Mandatory
+
 
 * finish 99_bottles_of_beer.js
 * Read Useful JS Troubleshooting Tips
