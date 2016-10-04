@@ -5,22 +5,22 @@ This is a breakdown of the top level functionality for final project
 * 
 
 ## Helper Functions
-### Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
+ Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 ## Additional Libraries
-### Use this section to list all supporting libraries and thier role in the project
+ Use this section to list all supporting libraries and thier role in the project
 
 ## JSON Data Keys
-### Use this section to list specific JSON Data Key mappings.  
+ Use this section to list specific JSON Data Key mappings.  
 
 ## jQuery Functional Requirements
-### Use this section to list some, but not all, of the jQuery methods discovered while working on this project.
+ Use this section to list some, but not all, of the jQuery methods discovered while working on this project.
 
 ## Change Log
-### Use this section to document what changes were made and when.
+ Use this section to document what changes were made and when.
 
 ## Issues and Resolutions
-### Use this section to list of all issues encountered and their resolution
+ Use this section to list of all issues encountered and their resolution
 
 ### SAMPLE
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
