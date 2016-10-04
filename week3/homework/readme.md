@@ -1,4 +1,4 @@
-## Week 2 Homework
+## Week 3 Homework
 
 ### Assignment Due on Thursday, 10/6:
 
@@ -9,11 +9,11 @@
 #### Optional
 * Continue reading chapter(s) 3,4 of [Eloquent JS] (http://eloquentjavascript.net/)
 
-### Assignment Due on Tuesday, 10/4:
+### Assignment Due on Tuesday, 10/11:
 
 #### Mandatory
 
-* finish 99_bottles_of_beer.js
+* 
 
 #### Optional
-* Continue reading Chapter 3,4 of [Eloquent JS] (http://eloquentjavascript.net/)
+* Reading Chapter 6: [The Secret Life of Objects](http://eloquentjavascript.net/06_object.html) of Eloquent JS

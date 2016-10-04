@@ -10,9 +10,8 @@ This is a breakdown of the top level functionality for building the Feedr applic
 
 * Clicking an article will render a modal with additional article info
 
-## Useful Functions
-### Use this area to write down possible functions that might be useful 
-when implementing the required functionality for feedr
+## Helper Functions
+### Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 ## Additional Libraries
 
