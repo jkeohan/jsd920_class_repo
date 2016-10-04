@@ -11,7 +11,7 @@ This is a breakdown of the top level functionality for building the Feedr applic
 * Clicking an article will render a modal with additional article info
 
 ## Helper Functions
-### Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
+Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 ## Additional Libraries
 
@@ -25,5 +25,6 @@ This is a breakdown of the top level functionality for building the Feedr applic
 
 This section will contain a list of all issues encountered and their resolution
 
+#### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object

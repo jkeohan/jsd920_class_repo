@@ -6,7 +6,7 @@ This is a breakdown of the top level functionality for final project
 * Functional component 2
 
 ## Helper Functions
- Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
+Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project
