@@ -8,7 +8,7 @@
 * CountItems Challenge - Solution
 
 * Conditional Statements & Loops - LAB2 [Starter](https://repl.it/Dmvx/19)
-* Conditional Statements & Loops - LAB2 [Solution]()
+* Conditional Statements & Loops - LAB2 [Solution]
 
 * Functions LAB1 - [Starter](https://repl.it/DnxF/18)
 * Functions LAB1 - [Solution]()
