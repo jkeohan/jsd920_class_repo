@@ -7,5 +7,5 @@
 * Loops - LAB2 [Starter](https://repl.it/DoqM/3)
 * Loops - LAB2 [Solution](https://repl.it/DoSr/12)
 
-* Functions LAB1 - [Starter](https://repl.it/DnxF/18)
+* Functions LAB1 - [Starter](https://repl.it/Doqt/1)
 * Functions LAB1 - [Solution](https://repl.it/DoSR/1)
