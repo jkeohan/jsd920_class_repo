@@ -15,4 +15,4 @@
 ### Class06
 
 * Warmup - [Starter](https://repl.it/DoyY/12)
-* Warmup - [Solution]()
+* Warmup - [Solution](https://repl.it/DosL/77)

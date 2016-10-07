@@ -3,7 +3,7 @@
     var arr = [];
     var count = 3;
   
-    $("sing-button").click(function() {
+    $("#sing-button").click(function() {
       for (var i = count; i > -1; i--)  {
         if(i>1) { arr.push('<li class = "bottle">'+ i +" bottles of beer on the wall"); }
         else if(i===1){ arr.push('<li class = "bottle">'+ i +" bottle of beer on the wall"); }
@@ -12,11 +12,10 @@
      var arrCounter = 0;
      var counter = 3;
      var interval = setInterval(function() {
-        if( counter == 1 ) { clearInterval(interval) } 
-        else { $('#bottle').append(arr[arrCounter++]);
-               counter-
-               console.log()
-               //console.log("This has run " + arrCounter + " times")
+        if( counter == -1 ) { clearInterval(interval) } 
+        else { $('#bottles').append(arr[arrCounter++]);
+               counter--
+               console.log("This has run " + arrCounter + " times")
         } 
       },1000)
    });
