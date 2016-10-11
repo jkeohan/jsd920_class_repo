@@ -9,10 +9,9 @@
 
 
 #### Optional
-* Continue reading [JS Object Reference](http://www.w3schools.com/jsref/jsref_operators.asp)
-* Continue reading Chapter 3: Functions of [Eloquent JS] (http://eloquentjavascript.net/)
-* Continue reading Chapter 8: Bugs and Error Handling of [Eloquent JS] (http://eloquentjavascript.net/)
+* Continue reading [JS Object Reference](http://www.w3schools.com/js/js_objects.asp)
 * Read [w3Schools JS Mistakes](http://www.w3schools.com/js/js_mistakes.asp)
+* Read [HTML DOM Document](http://www.w3schools.com/js/js_htmldom_document.asp)
 
 ### Assignment Due on Tuesday, 10/11:
 
