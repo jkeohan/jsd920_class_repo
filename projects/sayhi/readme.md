@@ -48,7 +48,12 @@ The path used for boundingbox needs to have the data formated as:
 ```javascript
 Object {type: "FeatureCollection", features: Array[176]}
 ```
-however when I attempted to filter for regional data .filter() method created only a new array of each region but not as an object defined above. This required that I extend the regionalFeatures function to build a new obj with those properties
+However when I attempted to filter for regional data .filter() method created only a new array of those regional countries but not as an object defined above. 
+```javascript
+[Object, Object, Object, Object, Object, Object, Object]
+```
+
+This required that I extend the regionalFeatures function to build a new obj with those properties
 ```javascript
      function regionFeatures(json){
         var obj = {type: "FeatureCollection",features:[]}
