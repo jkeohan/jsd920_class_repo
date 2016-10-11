@@ -10,7 +10,7 @@
         else{ arr.push('<li class = "bottle">'+ "no more bottles of beer on the wall"); }
       }; 
      var arrCounter = 0;
-     var counter = 3;
+     var counter = 3
      var interval = setInterval(function() {
         if( counter == -1 ) { clearInterval(interval) } 
         else { $('#bottles').append(arr[arrCounter++]);
