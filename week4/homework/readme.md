@@ -16,7 +16,8 @@
 
 ### Assignment Due on Tuesday, 10/11:
 
-* Final Project Idea 
+* Final Project 
+** Finalize project description
 
 #### Optional
 * Reading Chapter 6: [The Secret Life of Objects](http://eloquentjavascript.net/06_object.html) of Eloquent JS
