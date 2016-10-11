@@ -8,19 +8,22 @@ Recreate an interactive version of [21 Ways To Say Hi](http://time.com/40910/21-
 
 This is a breakdown of the top level functionality for final project
 
-* Use D3 to render the world map based on the mercator() projection
+* Use D3 to render the world map based on the mercator() projection but other projections will be tested
 * Use D3 to render standard regional views with included countries
 * Use D3 to render single country views
 * Include a lanuage API to dynamically translate build the translation
+* Store each translation in object for cooresponding country so as not to query API a second time
+* Inclue audio (if possible) of translations as some languages are too unique and\or have regional dialects that make it impossible to visually decipher
 * Use Angular v1 to manage routing and dynamically build the coresponding views
 
-## Helper Functions
+## Helper Functions (reusable in other projects)
 * canvasSize(sel) - used take in a DOM element and return it's current width/height.  This can be used for setting the width\height of the SVG's and when creating and redrawing (responsive) the D3 visuals.
 
 * boundingBox(path,json) - used to define bounding box for an SVG so that the visual fits within the defined space without having to manually define its center, scale and translate properties.
 
 ## Additional Libraries
-* [colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - used to pull in tested color schemes
+* [Colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - used to pull in tested color schemes
+* [Angular](https://angularjs.org/)
 
 ## JSON Data Keys
 * features.properties.continent - returns continent for that country 
