@@ -23,7 +23,7 @@ This is a breakdown of the top level functionality for final project
 * [colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - used to pull in tested color schemes
 
 ## JSON Data Keys
- Use this section to list specific JSON Data Key mappings.  
+* features.properties.continent - returns continent for that country 
 
 ## jQuery Functional Requirements
  Use this section to list some, but not all, of the jQuery methods discovered while working on this project.
@@ -51,3 +51,5 @@ instead of...
           return d.properties.continent == "North America" })
         return obj
       }
+
+####Resources: [centering a map using GeoJson](https://bl.ocks.org/mbostock/4707858)
