@@ -42,11 +42,7 @@ This is a breakdown of the top level functionality for final project
 instead of...
 47.50867703653491 [188, 142.4346910923981]  //this is good
 
-####RESOLUTION: used debugger to confirm it was undefined. the path used for boundingbox needs to have the data 
-     formated as: Object {type: "FeatureCollection", features: Array[176]}, however when I attempted to 
-     filter for regional data .filter created only a new array of each region 
-     but not as an object defined above
-     This required that I extend the regionalFeatures function to build a new obj with those properties
+####RESOLUTION: used debugger to confirm it was undefined. the path used for boundingbox needs to have the data formated as: Object {type: "FeatureCollection", features: Array[176]}, however when I attempted to filter for regional data .filter created only a new array of each region but not as an object defined above. This required that I extend the regionalFeatures function to build a new obj with those properties
 ```javascript
      function regionFeatures(json){
         var obj = {type: "FeatureCollection",features:[]}
