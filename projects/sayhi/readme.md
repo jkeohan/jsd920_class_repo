@@ -43,7 +43,7 @@ instead of...
      formated as: Object {type: "FeatureCollection", features: Array[176]}, however when I attempted to 
      filter for regional data .filter created only a new array of each region but not as an object defined above
      This required that I extend the regionalFeatures function to build a new obj with those properties
-
+```javascript
      function regionFeatures(json){
         var obj = {type: "FeatureCollection",features:[]}
          obj.features = 
@@ -51,5 +51,7 @@ instead of...
           return d.properties.continent == "North America" })
         return obj
       }
-
+```
 ####Resources: [centering a map using GeoJson](https://bl.ocks.org/mbostock/4707858)
+
+Underscores
