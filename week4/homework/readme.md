@@ -16,8 +16,14 @@
 
 ### Assignment Due on Tuesday, 10/11:
 
+#### Coding Assignment
+* 99_bottles_DOM
+* json_hw.js
+
 #### Final Project 
 * Finalize project description
+* Functional Components should contain at least 5 items
+* HelpFunctions - At least 2 reuseable helper functions
 
 #### Optional
 * Reading Chapter 6: [The Secret Life of Objects](http://eloquentjavascript.net/06_object.html) of Eloquent JS
