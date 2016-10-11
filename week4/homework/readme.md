@@ -4,9 +4,6 @@
 
 * Read [Basics of Javascript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 * Read [You Don't Need jQuery](http://blog.garstasio.com/you-dont-need-jquery/dom-manipulation/)
-* Read [How jQuery Works](https://learn.jquery.com/about-jquery/how-jquery-works/)
-* 
-
 
 #### Optional
 * Continue reading [JS Object Reference](http://www.w3schools.com/js/js_objects.asp)
@@ -25,4 +22,5 @@
 * HelpFunctions - At least 2 reuseable helper functions
 
 #### Optional
-* Reading Chapter 6: [Intro To jQuery](http://www.w3schools.com/jquery/jquery_intro.asp) - W3Schools
+* Reading [Intro To jQuery](http://www.w3schools.com/jquery/jquery_intro.asp) - W3Schools
+* Reading [How jQuery Works](https://learn.jquery.com/about-jquery/how-jquery-works/)
