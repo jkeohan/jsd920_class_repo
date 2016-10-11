@@ -41,7 +41,8 @@ instead of...
 
 ####RESOLUTION: used debugger to confirm it was undefined. the path used for boundingbox needs to have the data 
      formated as: Object {type: "FeatureCollection", features: Array[176]}, however when I attempted to 
-     filter for regional data .filter created only a new array of each region but not as an object defined above
+     filter for regional data .filter created only a new array of each region 
+     but not as an object defined above
      This required that I extend the regionalFeatures function to build a new obj with those properties
 ```javascript
      function regionFeatures(json){
@@ -54,4 +55,7 @@ instead of...
 ```
 ####Resources: [centering a map using GeoJson](https://bl.ocks.org/mbostock/4707858)
 
-Underscores
+***
+
+####ISSUE:
+####RESOLUTION:
