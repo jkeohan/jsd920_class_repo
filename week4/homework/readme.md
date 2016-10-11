@@ -26,4 +26,4 @@
 * HelpFunctions - At least 2 reuseable helper functions
 
 #### Optional
-* Reading Chapter 6: [The Secret Life of Objects](http://eloquentjavascript.net/06_object.html) of Eloquent JS
+* Reading Chapter 6: [Intro To jQuery](http://www.w3schools.com/jquery/jquery_intro.asp) - W3Schools
