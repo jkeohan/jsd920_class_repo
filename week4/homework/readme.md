@@ -24,3 +24,4 @@
 #### Optional
 * Reading [Intro To jQuery](http://www.w3schools.com/jquery/jquery_intro.asp) - W3Schools
 * Reading [How jQuery Works](https://learn.jquery.com/about-jquery/how-jquery-works/)
+* [Adding A Sublime Text 3 Build](http://michaelcrump.net/getting-sublime-3-to-launch-your-html-page-in-a-browser-with-a-key-combo/)
