@@ -10,7 +10,7 @@
 * Read [w3Schools JS Mistakes](http://www.w3schools.com/js/js_mistakes.asp)
 * Read [HTML DOM Document](http://www.w3schools.com/js/js_htmldom_document.asp)
 
-### Assignment Due on Tuesday, 10/11:
+### Assignment Due on Tuesday, 10/18:
 
 #### Coding Assignment
 * 99_bottles_DOM
