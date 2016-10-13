@@ -27,3 +27,6 @@
 #### Troubleshooting
 * [Try Catch Blocks](http://www.w3schools.com/js/js_errors.asp)
 
+#### Templeting
+* Video: [Intro To Handlebars.js](https://www.youtube.com/watch?v=SPaw1ETzS2c)
+
