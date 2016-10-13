@@ -26,3 +26,4 @@
 * Reading [How jQuery Works](https://learn.jquery.com/about-jquery/how-jquery-works/)
 * [Adding A Sublime Text 3 Build](http://michaelcrump.net/getting-sublime-3-to-launch-your-html-page-in-a-browser-with-a-key-combo/)
 * [Sublime Keyboard Shortcuts](https://www.viget.com/articles/my-overused-sublime-text-keyboard-shortcuts)
+* Video: [Intro To Handlebars.js](https://www.youtube.com/watch?v=SPaw1ETzS2c)
