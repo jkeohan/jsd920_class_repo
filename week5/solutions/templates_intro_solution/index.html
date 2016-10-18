@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<div id="title">
+			<!-- <h1> US Presidents</h1>
+			<p>A JSD Project</p> -->
+		</div>
+
+		<h4>jQuery List</h4>
+		<select id="jquery-list">
+			<!-- <option value="">Washington</option>
+			<option value="">Adams</option>
+			<option value="">Jefferson</option>
+			<option value="">Madison</option>
+			<option value="">Monroe</option>
+			<option value="">Adams</option>
+			<option value="">Jackson</option>
+			<option value="">Van Buren</option>
+			<option value="">Harrison</option>
+			<option value="">Tyler</option>
+			<option value="">Polk</option>
+			<option value="">Taylor</option>
+			<option value="">Fillmore</option>
+			<option value="">Pierce</option>
+			<option value="">Buchanan</option>
+			<option value="">Lincoln</option>
+			<option value="">Johnson</option>
+			<option value="">Grant</option>
+			<option value="">Hayes</option>
+			<option value="">Garfield</option>
+			<option value="">Arthur</option>
+			<option value="">Cleveland</option>
+			<option value="">Harrison</option>
+			<option value="">Cleveland</option>
+			<option value="">McKinley</option>
+			<option value="">Roosevelt</option>
+			<option value="">Taft</option>
+			<option value="">Wilson</option>
+			<option value="">Harding</option>
+			<option value="">Coolidge</option>
+			<option value="">Hoover</option>
+			<option value="">Roosevelt</option>
+			<option value="">Truman</option>
+			<option value="">Eisenhower</option>
+			<option value="">Kennedy</option>
+			<option value="">Johnson</option>
+			<option value="">Nixon</option>
+			<option value="">Ford</option>
+			<option value="">Carter</option>
+			<option value="">Reagan</option>
+			<option value="">Bush</option>
+			<option value="">Clinton</option>
+			<option value="">Bush</option>
+			<option value="">Obama</option> -->
+		</select>
+
+		<h4>Handlebars List</h4>
+		<div id="handlebars-list"></div>
+
+		<!-- TITLE TEMPLATE -->
+		<script id="title-template" type="text/x-handlebars-template">
+    		<h1>{{title}}</h1>
+    		<p>{{description}}</p>
+  		</script>
+
+		<!-- PRESIDENT TEMPLATE -->
+	 	<script id="president-template" type="text/x-handlebars-template">
+			<select>
+				{{#each presidents}}
+					<option>{{this}}</option>
+				{{/each}}
+			</select>
+		</script>
+
+
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="handlebars.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
