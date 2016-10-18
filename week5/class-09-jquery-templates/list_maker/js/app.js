@@ -7,15 +7,26 @@
 // 6. If the value of #item is blank, do not append the <li> and alert user
 
 // STUDENT LAB
-// 7. Add an "archive - " string before (prepend) each item that will remove the li when clicked. 
-// 9. All newly added items should also have archive added and be deleted when clicked
-// 8. Add all mouse events needed to replicate :hover css 
+// 7. Add an "archive - " string before each list item that will remove the li when clicked. 
+// 9. All newly added li's should also have archive added and be deleted when clicked
+// 8. Add mouse events needed to replicate :hover css 
 
 
 // similar to window.onload
 $(document).ready(function () {
-	// YOUR CODE HERE
-})
+	  var list = $('#list')
+    var input = $('#new-item')
+    $('#clickme').click(function(event){
+      event.preventDefault()
+      if(input.val() == "") {alert("type something")}
+      else { 
+        var item = $('<li>').html(input.val()) 
+        list.append(item)
+        prepend(item)
+        input.val("").focus()
+      }//else
+    })//click event
+})//ready event
 
 
 
