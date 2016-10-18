@@ -22,9 +22,6 @@ function addCompleteLinks($lis) {
   $lis.append($completedLink);//append to span to li
 
   $('.complete-task').on('click', function(event) {
-    // We don't need `event.preventDefault()` here
-    // because there is no weird default action
-    // when clicking on a `span` element.
     $(this).parent().addClass('completed');//add class to the parent li of a
   });
 }
@@ -38,7 +35,6 @@ console.log($thingListItems)
 addCompleteLinks($thingListItems); //add span to existing lis'
 
 $button.on('click', function(event) {
-// $button.click(function() {
   event.preventDefault();
   var newThing = $newThingInput.val();
   if (newThing === '') {
