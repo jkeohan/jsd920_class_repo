@@ -12,9 +12,10 @@
 * open_weather_map
 
 #### Final Project 
-* Finalize project description
-* Functional Components should contain at least 5 items
-* HelpFunctions - At least 2 reuseable helper functions
+* Project skeleton (top-level directories; necessary files)
+* List of libraries (if any)
+* Continue working on functional components
+* Continue working on HelpFunctions 
 
 #### Optional
 
