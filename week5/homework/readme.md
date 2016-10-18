@@ -3,7 +3,7 @@
 ### Assignment Due on Thursday, 10/20:
 
 #### Optional
-* Reading: * [5 Simple LI styles](https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/)
+* Reading: [5 Simple LI styles](https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/)
 * Video: [Intro To Handlebars.js](https://www.youtube.com/watch?v=SPaw1ETzS2c)
 
 ### Assignment Due on Tuesday, 10/25:
