@@ -15,6 +15,8 @@
 #### API's
 
 * [Largest API directory on the web](http://www.programmableweb.com/apis/directory)
+* [$.get vs $.ajax}](https://blog.kevinchisholm.com/javascript/jquery/jquery-ajax-get-post-difference/)
+* [Using jquery $.ajax](https://blog.kevinchisholm.com/javascript/jquery/jquery-ajax-get-post-difference/)
 
 #### Angular Resources
 

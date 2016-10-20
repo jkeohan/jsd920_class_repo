@@ -28,3 +28,6 @@ This section will contain a list of all issues encountered and their resolution
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object
+
+
+
