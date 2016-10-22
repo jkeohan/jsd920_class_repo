@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Citi Bike</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="button" name="button" id="getDataButton" value="Get Citi Bike Data">
+
+  <div id="output"></div>
+
+    <!-- CITIBIKE TEMPLATE -->
+
+    <script id="citibike-template" type="text/x-handlebars-template">
+      {{#each stations}}
+        <div><span>{{name}}</span><span>{{station_id}}</span></div>
+      {{/each}}
+    </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="handlebars.js"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
