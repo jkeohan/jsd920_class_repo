@@ -38,3 +38,4 @@ $(document).ready(function () {
   var weatherUrl = '';
 });
 
+

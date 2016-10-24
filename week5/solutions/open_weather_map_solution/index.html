@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Open Weather Maps API</h1>
+	<hr>
+
+	<div>
+		<h2>Current Weather in NYC</h2>
+		<div id="nyc-weather"></div>
+	</div>
+
+	<hr>
+
+	<div>
+		<form id="weather-form">
+			<h2>Find Weather</h2>
+			<label for="city">City</label>
+			<input name="city" type="text" id="city" placeholder="City">
+			<label for="state">State</label>
+			<input name="state" type="text" id="state" placeholder="State">
+			<button>Go!</button>
+		</form>
+
+
+		<div id="weather-output"></div>
+	</div>
+
+	<script id="weather-template" type="text/x-handlebars-template">
+		<p>City: {{city}}</p>
+		<p>Temperature: {{temp}}</p>
+		<p>Humidity: {{humidity}}</p>
+		<p>Wind Speed: {{windSpeed}}</p>
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="handlebars.js"></script>
+  	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
