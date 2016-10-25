@@ -1,0 +1,13 @@
+body {
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clickme {
+      width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}

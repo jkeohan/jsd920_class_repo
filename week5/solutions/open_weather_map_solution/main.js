@@ -122,38 +122,77 @@ $(document).ready(function () {
   		}
   	}
 
-       function setPicture (data){
-          // console.log('hi');
-          var apiKey = '5888f4afcee00eca4cd92576788b1498';
-          var newCity = $('#new-city').val();
-          var picUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+apiKey+'&tags='+newCity+'&format=json&nojsoncallback=1';
-            $.ajax({
-                url: picUrl,
-                type: 'GET',
-                success: function (data) {
-                  //https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
-                  var farmId = data.photos.photo[0].farm;
-                  var serverID = data.photos.photo[0].server;
-                  var id = data.photos.photo[0].id;
-                  var secret = data.photos.photo[0].secret;
-                  var imgUrl = 'https:'+'//'+'farm'+farmId+'.staticflickr.com'+'/'+serverID+'/'+id+'_'+secret+'.jpg';
-                  console.log(imgUrl);
-                  $('body').css({'background-image':'url('+ imgUrl + ')'})
-                  $('body').css("color","white")
-                ; 
-                  // $('#yourDiv).css({'background-image':'url(' + imgFileData + ')'});
+  $('#clickme').click(function(event){
+    event.preventDefault();
+      var apiKey = '963e108b3e21fb75d02fc3f49a345f13';
+      var newCity = $('#city').val();
+      var newState = $('#state').val();
+      var newWeatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q='+newCity+','+newState+'&units=imperial&appid=' + apiKey;
+      
 
-                },
+    function addToDOM(data){ 
+        $('#weather-summary2').append('<p>' + 'Here are some of the weather details in '+ newCity + ', ' + newState + ':'+ '</p>');        
+        $('#weather-summary2').append('<li>' + 'Temp : '  + data.main.temp + ' ˚F' + '</li>');
+        $('#weather-summary2').append('<li>' + 'Humidity: '  + data.main.humidity + '</li>');
+        $('#weather-summary2').append('<li>' + 'Wind speed (mph): '  + data.wind.speed + '</li>');
+    }
+
+    // function changeColor(data){
+    //     var temp = parseInt(data.main.temp);     
+    //     // console.log(temp);
+    //     if (temp < 65){
+    //       $('body').css('background-color', 'blue');
+    //     } else {
+    //       $('body').css('background-color', 'red');
+    //     }
+    //     // } else if (temp <= 85){
+    //     //   $('body').css('background-color', 'purple');
+    //     // } else {
+    //     //   $('body').css('background-color', 'red');
+    //     // }
+    // }
 
 
-                error: function  (response) {
-                  console.log (response);
-            
-                }
+    function setPicture (data){
+      // console.log('hi');
+      var apiKey = '5888f4afcee00eca4cd92576788b1498';
+      var newCity = $('#city').val();
+      var picUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+apiKey+'&tags='+newCity+'&format=json&nojsoncallback=1';
+        $.ajax({
+            url: picUrl,
+            type: 'GET',
+            success: function (data) {
+              //https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+              var farmId = data.photos.photo[0].farm;
+              var serverID = data.photos.photo[0].server;
+              var id = data.photos.photo[0].id;
+              var secret = data.photos.photo[0].secret;
+              var imgUrl = 'https:'+'//'+'farm'+farmId+'.staticflickr.com'+'/'+serverID+'/'+id+'_'+secret+'.jpg';
+              console.log(imgUrl);
+              $('body').css({'background-image':'url('+ imgUrl + ')'})
+              $('body').css("color","white")
+            },
+            error: function  (response) {
+              console.log (response);
+        
+            }
+      });
+    }    
 
+  $.ajax({
+      url: newWeatherUrl,
+      type: 'GET',
+      success: function (data) {
+        setPicture(data);
+        // changeColor(data);
+        $('#city').val(''); 
+        $('#state').val('');
+        $('input:text:first').focus();
+      }
+  
+  });  
 
-          });
-        }   
+}); 
 
 });
 
