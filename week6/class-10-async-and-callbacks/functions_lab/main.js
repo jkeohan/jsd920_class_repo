@@ -24,6 +24,7 @@
  *
  * BONUS 1: Can you write another predicate function that counts evens?
  * BONUS 2: Can you write a function that will sum up all the numbers?
+ * INTERMEDIATE BONUS: Greater or Less Than (https://repl.it/CjaA/1)
  *
  */
 

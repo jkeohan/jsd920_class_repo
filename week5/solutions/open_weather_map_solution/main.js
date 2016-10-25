@@ -122,5 +122,38 @@ $(document).ready(function () {
   		}
   	}
 
+       function setPicture (data){
+          // console.log('hi');
+          var apiKey = '5888f4afcee00eca4cd92576788b1498';
+          var newCity = $('#new-city').val();
+          var picUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+apiKey+'&tags='+newCity+'&format=json&nojsoncallback=1';
+            $.ajax({
+                url: picUrl,
+                type: 'GET',
+                success: function (data) {
+                  //https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+                  var farmId = data.photos.photo[0].farm;
+                  var serverID = data.photos.photo[0].server;
+                  var id = data.photos.photo[0].id;
+                  var secret = data.photos.photo[0].secret;
+                  var imgUrl = 'https:'+'//'+'farm'+farmId+'.staticflickr.com'+'/'+serverID+'/'+id+'_'+secret+'.jpg';
+                  console.log(imgUrl);
+                  $('body').css({'background-image':'url('+ imgUrl + ')'})
+                  $('body').css("color","white")
+                ; 
+                  // $('#yourDiv).css({'background-image':'url(' + imgFileData + ')'});
+
+                },
+
+
+                error: function  (response) {
+                  console.log (response);
+            
+                }
+
+
+          });
+        }   
+
 });
 
