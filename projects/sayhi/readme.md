@@ -25,6 +25,10 @@ This is a breakdown of the top level functionality for final project
 * [Colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - used to pull in tested color schemes
 * [Angular](https://angularjs.org/)
 
+## API Calls
+* [Google Translate](https://cloud.google.com/translate/v2/translating-text-with-rest) 
+* [Google Translate Country Codes](https://sites.google.com/site/tomihasa/google-language-codes)
+
 ## JSON Data Keys
 * features.properties.continent - returns continent for that country 
 
@@ -67,7 +71,7 @@ This required that I extend the regionalFeatures function to build a new obj wit
 
 ***
 
-####ISSUE:
+####ISSUE: Google translate: The country codes google uses don't all coincide with the 2 digit codes from the geojson file. 
 ####RESOLUTION:
 
 ####Additional Resources:

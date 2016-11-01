@@ -1,4 +1,4 @@
-## Week 6 Homework
+## Week 7 Homework
 
 ### Assignment Due on Thursday, 11/3:
 * Continue working on Feedr
@@ -13,7 +13,3 @@
 
 #### Final Project 
 * Keep working on your project
-
-
-
-
