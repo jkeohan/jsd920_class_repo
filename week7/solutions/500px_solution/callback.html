@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  <h1>Inside Callback.hmtl</h1>
+    <script>
+     console.log("inside while loop in script tag of body")
+     //Return the anchor part of a URL. 
+     //URL is http://localhost:3000/callback.html#token:Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC,callback:_500pxCallback68790715 
+      var hash_string = window.location.hash.substring(1),
+          //"#token:Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC,callback:_500pxCallback68790715"
+          parts = hash_string.split(','),
+          //["#token:Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC", "callback:_500pxCallback68790715"]
+          part,
+          result = {},
+          parent_document = window.opener ? window.opener : parent;
+          //to better understand parent....
+          //window.open("", "", "width=200, height=100");
+          //alert(window.parent.location);
+      while (part = parts.shift()) {
+        //"#token:Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC"
+        console.log("inside while loop in script tag of body")
+        part = part.split(':');
+        //["#token", "Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC"]
+        result[part[0]] = part[1] == undefined ? true : part[1];
+        //result is now:  {#token: "Rkq0EusxETX0sD0wXtDiwDmb2mcCdpC8OAvPCbNC"}
+      }
+      parent_document[result.callback](result);
+      if (window.opener) {
+        window.close();
+      }
+    </script>
+  </body>
+</html>
