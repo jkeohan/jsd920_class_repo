@@ -38,7 +38,7 @@ $(function() {
           alert('no photos found')
         }
         else { 
-          //custom function
+          handleResponseSuccess(response)
         }
       })
 
@@ -47,4 +47,16 @@ $(function() {
       $('.images').append('Sorry, the browser does not support geolocation');
     }
   });//500px.on
+  function handleResponseSuccess(response) {
+    //response is an array of objects
+    var allPics = response.data.photos
+    //loop through the allPics array using jQuery ($.each())
+    allPics.forEach(function(d) {
+   // $.each(allPics, function(i,d) {
+      //create the dom element using jquery
+      var element = $('<img>').attr("src", d.image_url).addClass('image')
+      //grab the dom element and append the image
+      $('.images').append(element)
+    })
+  }
 });
