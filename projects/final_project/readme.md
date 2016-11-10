@@ -9,7 +9,7 @@ Use this section to describe your final project and perhaps any links to relevan
 This is a breakdown of the top level functionality for final project
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  --- | :---: | :---: |
+| --- | :---: |  :---: | :---: | :---: |
 | Component 1 | H | 10hrs| 5hrs |  |
 
 ## Helper Functions
