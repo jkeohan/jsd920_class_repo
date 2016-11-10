@@ -4,7 +4,7 @@
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality
 
-## Functionl Components
+## Functional Components
 
 This is a breakdown of the top level functionality for final project
 
