@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box
+}
+
+#wrapper {
+  background-color: rgb(32,71,70);
+  width:70%;
+  height:100%;
+  margin:0 auto;
+}
+
+header {
+   height: 350px;
+   padding: 20px 0px;
+   margin-bottom:50px;
+  line-height:1.5
+}
+
+#desc { 
+  float:left;
+  height: 100%;; 
+  width: 50%;
+  padding: 3%;
+  border-right:solid 3px white;
+  text-align: right;
+ 
+}
+
+#desc h1{
+  color: rgb(6,247,244);
+   font-size: 8vw;
+    margin: 0;
+}
+
+#desc p{
+  margin:0;
+  color: wheat;
+  font-size:1.3vw;
+}
+
+#desc p.heading{
+  font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+#map { 
+   display:inline-block;
+  height:100%; 
+  width:50%;
+/*       padding: 3%; */
+}
+
+#map svg {
+/*   width:100%;
+  height:100% */
+}
+#world, .countries, .country {
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+#legends {
+  background-color: rgb(32,71,70);
+  width:100%;
+  height:200px;
+  margin:20px auto;
+  overflow:auto;
+}
+
+.legendDiv {
+  display:inline-block;
+  float:left;
+  width:16.6%;
+  height:100px;
+  margin:0 auto
+}
+
+.legendDiv p{
+  text-align:center;
+  text-transform:uppercase;
+  color: wheat;
+  font-weight: bold;
+}
+
+#countryWrapper {
+  width:90%;
+  margin: 0 auto 50px;
+/*  margin-top:-50px;*/
+}
+
+#countryWrapper .country {
+  width: 25%;
+  height:300px;
+  display:inline-block;
+  margin-bottom:50px;
+      padding: 20px;
+  text-align: center;
+}
+
+#countryWrapper .country .countryMap{
+  width:70%;
+  height:180px;
+    margin:0 auto;
+}
+
+#countryWrapper .country .line {
+    height: 50px;
+    width: 2px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+#countryWrapper .country .countryInfo{
+  margin:0 auto;
+      width: 70%;
+}
+
+#countryWrapper .country .countryInfo p{
+  margin: 0;;
+  color:wheat;
+}
+
+ 
+
+#countryWrapper .country .countryInfo .countryName{
+ font-size:  1.6vw;;
+    font-weight: bold;
+}
+
+
+#countryWrapper .country .countryInfo .countryHello{
+ border-bottom: 1px solid white;
+      font-size: 1.5vw;
+  font-style: italic;
+    padding-bottom: 5px;
+     width: 50%;
+    margin: 0 auto;
+}
+
+#countryWrapper .country .countryInfo .countryPeople{
+    padding-top: 5px;
+   font-size: 20px;
+
+}
+
+
+
+
+ 
