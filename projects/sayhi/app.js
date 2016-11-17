@@ -1,6 +1,7 @@
 
 var url = "https://gist.githubusercontent.com/jkeohan/d77d5ab47e018defe48d54f59acefb65/raw/ff61673eff2e7bf610c5a426c5bd9ca46da2a9da/worldmap_geojson.json"
 var c = d3.map()
+var legMargin = {top:10,bottom:50}
 function update(obj){
    obj.features.filter(function(d,i) {
     var code = d.properties.iso_a2.toLowerCase()
@@ -27,17 +28,7 @@ function update(obj){
    return obj
 }
 
-// function update(d) { 
-//   d.test = "test"
-//   return d
-// }
-
-// function update(obj) { 
-//   //  obj.features.forEach(function(d) { d.test = "test" } )
-//   // console.log(obj)
-//   return obj
-// }
-
+// Use queue to pull the json and make the ajax call
 
 d3.json(url,function(err, world)  {
 
@@ -55,14 +46,14 @@ d3.json(url,function(err, world)  {
   
  // https://www.googleapis.com/language/translate/v2?key=AIzaSyAADudga5Cdk2QlHDWF8UAHQEy-Z_ikHw8&target=de&q=Hello
 
-  var worldMap = buildMap('#map',update(world))
+  var worldMap = buildMap('#map',world)
   var legendMap = smallMulitples(legendVals(world))
   var countryMap = countryInfo(legendVals(world))
 
   function smallMulitples(arr) {
     var div = d3.select("#legends")
     arr.forEach(function(d){
-      var wrapper = div.append("div").attr("class","legendDiv").on("click",function() { console.log("yes")})
+      var wrapper = div.append("div").attr("class","legendDiv")//.on("click",function() { console.log("yes")})
       buildLegend(wrapper,d)
     })
   }
@@ -79,8 +70,33 @@ d3.json(url,function(err, world)  {
     })
   }
 
+  function build(sel,json,className,cb){
+    var canvas = canvasSize(sel)
+    var width = canvas[0] ; 
+    var height = canvas[1]
+    var map = d3.select(sel)
+    var svg = map.append("svg").attr("width", width).attr("height", height)
+    var projection = d3.geo.mercator().scale(1).translate([0,0])
+    var path = d3.geo.path().projection(projection)
+    var bounds = boundingBox(path,json,sel);
+    projection.scale(bounds[0]).translate(bounds[1]);
+    svg.attr("class", className).selectAll("path").data( function(d) { return json.features } )
+    .enter().append("path").attr("d", path).attr("class",function(d) { return d.properties.continent })
+    cb(svg)
+  }
+
+  var buildMap2 = build("#map",world,"world",function(svg){
+    var texture = textures.lines().thicker().orientation("3/8")
+    d3.select(svg).style("fill", function(d,i) {
+      console.log(d)
+     texture.stroke(function(){ 
+      return colors(d.properties.continent)})
+      svg.call(texture);
+      return texture.url()
+    })
+  })
+
   function buildMap(sel,json){
-    console.log(json)
     var canvas = canvasSize("#map")
     var width = canvas[0] ; console.log(canvas)
     var height = canvas[1]
@@ -88,8 +104,6 @@ d3.json(url,function(err, world)  {
     var svg = map.append("svg").attr("width", width).attr("height", height)
     var projection = d3.geo.mercator().scale(1).translate([0,0])  //  .scale(width/2.5/Math.PI).translate([width /2 ,  height/1.4])
     // var projection = d3.geoMollweide().scale(1).translate([0,0])  //  .scale(width/2.5/Math.PI).translate([width /2 ,  height/1.4])
-    
-
     var path = d3.geo.path().projection(projection)
     var bounds = boundingBox(path,json,sel);// console.log("bounds is: ",bounds)
     projection.scale(bounds[0]).translate(bounds[1]);
@@ -106,50 +120,9 @@ d3.json(url,function(err, world)  {
     } )
     
   }
-  
-   function buildLegend(sel,json){
-     var legMargin = {top:10,bottom:50}
-     var canvas = canvasSize(".legendDiv")
-     var width = canvas[0];
-     var height = canvas[1] - legMargin.bottom;
-     var leg = [width,height]
-     sel.on("click",function(d) {
-      countryInfo([d])
-      console.log(json.values.map(function(d) { 
-        return d.properties.name})) ; } )
-     // var legWidth = parseFloat(d3.select("#legends").node().clientWidth)
-     // var legScale = d3.scale.linear().range([0,legWidth]).domain([0,5])
-     var svg = sel.append("svg").attr("width", width).attr("height", height)
-     var projection = d3.geo.mercator().scale(1).translate([0,0])
-     var path = d3.geo.path().projection(projection)
-     var jsonData = {type: "FeatureCollection",features:json.values}
-     var bounds = boundingBoxLeg(path,jsonData,leg);// console.log("bounds is: ",bounds)
-     projection.scale(bounds[0]).translate(bounds[1]);
-     svg.attr("class", "countries").on("click",function() { console.log("yes") } )
-    .selectAll("path").data( function(d) { return jsonData.features } )
-    .enter().append("path").attr("d", path ).style("fill", function(d) { return colors(d["properties"]["continent"]) } )  
-      .attr("class",function(d) {  return d.properties.name } )
-     sel.append("p").text(json.key)
-    
    
-  }
-  
-    function boundingBoxLeg(path,json,leg){ 
-    //console.log("bounding box is: ",json,sel)
-   // var canvas = canvasSize(sel); 
-    var width = leg[0]
-    var height = leg[1]//leg[0]/1.85; 
-    var b = path.bounds(json);
-    var s = .95/Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
-    var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
-    return [s,t]
-  }
-  
-  
-  
-  
     function buildCountry(sel,json) {
-      var canvas = canvasSize(".country")
+     var canvas = canvasSize(".country")
      var width = canvas[0]-100; 
      var height = canvas[1]-100
     var countryMap = sel.append('div').attr("class","countryMap")
@@ -179,41 +152,43 @@ d3.json(url,function(err, world)  {
   }
 
 d3.selectAll(".legendDiv")
-  
-//   function buildCountry1(sel,json){
-//  //Object {type: "Feature", properties: Object, geometry: Object}
-//     var name = json.properties.name
-//     var canvas = canvasSize(".country")
-//    width = canvas[0]; height = canvas[1]
-//     // width = 200;
-//     // height = 200;
-//     var countryMap = sel.append('div').attr("class","countryMap")
-//     var svg = countryMap.append("svg").attr("width",width).attr("height",height)
-//     var projection = d3.geo.mercator().scale(1).translate([0,,0])
-//     var path = d3.geo.path().projection(projection)
-    
-//     var b = path.bounds(json);
-//     var s = .95/Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
-//     var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
-    
-//     var jsonData = {type: "FeatureCollection",features:[json]};
-//     var bounds = boundingBox(path,json,".country");
-//     projection.scale(s).translate(t);
 
-//     svg.append('path').datum( json)
-//  .attr("d", path ).style("fill", function(d) { return colors(d["properties"]["continent"]) } ) 
-//     // svg.selectAll("path").data( function(d) { return json} )
-//     //   .enter().append("path").attr("d", path ).style("fill", function(d) { return colors(d["properties"]["continent"]) } ) 
-
-//     var countryInfo = sel.append("div").attr("class","countryInfo").data([json])
-//     countryInfo.append("div").attr("class","line")
-//     countryInfo.append("p").attr("class","countryName").html(name)
-//     countryInfo.append("p").attr("class","countryHello").html('hello')
-//     countryInfo.append("p").attr("class"<"countryPeople").html("countryPeople")
-//   }
+   function buildLegend(sel,json){
+    console.log(json)
+     var canvas = canvasSize(".legendDiv")
+     var width = canvas[0];
+     var height = canvas[1] - legMargin.bottom;
+     var leg = [width,height]
+     // var legWidth = parseFloat(d3.select("#legends").node().clientWidth)
+     // var legScale = d3.scale.linear().range([0,legWidth]).domain([0,5])
+     var svg = sel.append("svg").attr("width", width).attr("height", height)
+     var projection = d3.geo.mercator().scale(1).translate([0,0])
+     var path = d3.geo.path().projection(projection)
+     var jsonData = {type: "FeatureCollection",features:json.values}
+     var bounds = boundingBoxLeg(path,jsonData,leg);// console.log("bounds is: ",bounds)
+     projection.scale(bounds[0]).translate(bounds[1]);
+     svg.attr("class", "countries").on("click",function() { console.log("yes") } )
+    .selectAll("path").data( function(d) { return jsonData.features } )
+    .enter().append("path").attr("d", path ).style("fill", function(d) { return colors(d["properties"]["continent"]) } )  
+      .attr("class",function(d) {  return d.properties.name } )
+    sel.append("p").text(json.key) 
+    sel.on("click",function(d) {
+      countryInfo([d]) //country info takes in an array
+      console.log(json.values.map(function(d) { 
+        return d.properties.name})) ; } )
+  }
+ function boundingBoxLeg(path,json,leg){ 
+    //console.log("bounding box is: ",json,sel)
+   // var canvas = canvasSize(sel); 
+    var width = leg[0]
+    var height = leg[1]//leg[0]/1.85; 
+    var b = path.bounds(json);
+    var s = .95/Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
+    var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+    return [s,t]
+  }
   
-  //sent from buildMap2: Object {type: "FeatureCollection", features: Array[18]} .legendDiv
-  //returned from country 0.369651315259254 [133.5, NaN]
+  
   function boundingBox(path,json,sel){ 
     //console.log("bounding box is: ",json,sel)
     var canvas = canvasSize(sel); 
